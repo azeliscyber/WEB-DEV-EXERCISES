@@ -1,0 +1,87 @@
+<!-- This tells the computer that the following code is HTML -->
+<!DOCTYPE html>
+
+<!-- This is the big box that holds EVERYTHING on the page -->
+<html>
+
+<!-- This is like the brain of the page, stuff here can help the page work, but you don't see it -->
+
+<head>
+    <!-- These two lines help the page get fonts from the internet throught Google API-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- This line picks the exact font we want to use "IBM Plex Serif" -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Monsieur+La+Doulaise&display=swap"
+        rel="stylesheet">
+
+    <!-- This connects the CSS file that makes everything look nice and neat -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<!-- This is the body — everything you can actually SEE on the page lives here -->
+
+<body>
+
+    <!-- This is a "card" — like a little box that holds the picture and title together nicely -->
+    <div class="card" style="text-align: center;">
+
+        <!-- This puts a picture of the omelette on the page -->
+        <img src="omelette.jpg" class="imagescaling">
+
+        <!-- br means line break-->
+        <br>
+
+        <!-- h1 is the biggest title on the page -->
+        <h1>Vegetable Omelette Recipe</h1>
+
+        <!-- p is a small sentence under the title -->
+        <p>A 5 minute recipe that is healthy and perfect for breakfast</p>
+
+        <!-- End of the card box -->
+    </div>
+
+    <!-- br means line break-->
+    <br> <br> <br>
+
+    <!--  div defines a section or division of the webpage-->
+    <div>
+
+        <!-- h2 is a medium-sized title but not as big as h1 -->
+        <h2>Ingredients</h2>
+
+        <!-- ul makes a list with bullet points next to each item -->
+        <ul>
+            <!-- Each one of these is one thing in the list -->
+            <li>Eggs</li>
+            <li>Milk</li>
+            <li>Butter</li>
+            <li>Spinach</li>
+            <li>White Onion</li>
+            <li>Bell Peppers</li>
+            <li>Cheese</li>
+            <li>Salt</li>
+            <li>Black Pepper</li>
+        </ul>
+    </div>
+
+    <!-- div defines a section or division of the webpage-->
+    <div>
+        <h2>Instructions</h2>
+
+        <!-- This makes a numbered list instead of a bulleted one -->
+        <ol>
+            <!-- Each one of these is one step to follow, in order -->
+            <li>Whisk eggs and milk until it's smooth</li>
+            <li>Melt half the butter in a non-stick skillet over medium heat and add the chopped vegetables</li>
+            <li>Cook until the vegetables are tender</li>
+            <li>Pour in the remaining butter, switch to low/medium heat and pour the egg mixture into the skillet</li>
+            <li>Tilt the pan to spread the eggs evenly</li>
+            <li>Sprinkle with cheese and season with salt and pepper</li>
+            <li>Fold and serve hot</li>
+        </ol>
+    </div>
+</body>
+
+</html>

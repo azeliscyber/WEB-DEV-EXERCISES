@@ -1,0 +1,64 @@
+/* 
+   This is where we pick our colors! 
+   It's like choosing crayons before we start coloring.
+   We give each color a name so we can use it later easily.
+*/
+:root {
+    --primary-color: #8f61cb;       /* A pretty purple — used for the big title */
+    --secondary-color: #6c3baa;     /* A darker purple — used for the medium titles */
+    --accent-color: #000000;        /* Black — used for the line under the medium titles */
+    --text-color: #333333;          /* Dark gray — the color of most of the words */
+    --bg-color: #f4f4f4;            /* Light gray — the background color of the whole page */
+    --card-bg: #ffffff;             /* White — saved for boxes/cards if we need it */
+}
+
+/* This sets up the pretty font style so we can use it by name */
+.ibm-plex-serif-regular {
+    font-family: "IBM Plex Serif", serif;   /* Use our fancy font */
+    font-weight: 400;                       /* Not too thin, not too thick — just normal */
+    font-style: normal;                     /* Regular letters, not slanted */
+}
+
+/* 
+   This is for the whole page (the body).
+   Think of it like setting the rules for the entire piece of paper.
+*/
+body {
+    font-family: IBM Plex Serif;        /* Use our pretty font for all the words */
+    background-color: var(--bg-color);  /* Paint the background light gray */
+    color: var(--text-color);           /* Make the words dark gray */
+    margin: 0;                          /* No extra space around the edges of the page */
+    padding: 20px;                      /* But add a little breathing room inside the page */
+}
+
+
+/* This makes the BIG title (h1) look nice */
+h1 {
+    color: var(--primary-color);    /* Make it purple! */
+    margin-top: 0;                  /* No extra space above it */
+}
+
+/* This makes the medium titles (h2) look nice */
+h2 {
+    color: var(--secondary-color);              /* Make it a darker purple */
+    border-bottom: 2px solid var(--accent-color); /* Draw a black line under it */
+    padding-bottom: 5px;                        /* A tiny bit of space between the words and the line */
+    margin-top: 20px;                           /* Some space above it so it doesn't feel squished */
+}
+
+/* This is for both types of lists — dotted ones and numbered ones */
+ul,
+ol {
+    padding-left: 20px;     /* Push the list items a little to the right so they look neat */
+}
+
+/* This is for each item inside a list */
+li {
+    margin-bottom: 8px;     /* Add a little gap between each item so they're not too close together */
+}
+
+/* This makes sure the omelette picture doesn't get too big */
+.imagescaling {
+    max-width: 20%;     /* The picture can only be 20% of the page wide — so it stays small and cute */
+    height: auto;       /* Let the height figure itself out so the picture doesn't look stretched */
+}
