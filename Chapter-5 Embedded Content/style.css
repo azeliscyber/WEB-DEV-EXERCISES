@@ -1,0 +1,22 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.videowrapper video {
+    max-width: 80%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-left: 50px;
+}

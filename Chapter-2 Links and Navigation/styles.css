@@ -1,0 +1,160 @@
+body {
+    background-color: #1B1A20;
+    font-family: 'Rubik', sans-serif;
+    color: #FFFFFF;
+    margin: 15px 20px;
+}
+
+h1 {
+    color: #C19C7A;
+    border-bottom: 1px solid #C19C7A;
+    padding-bottom: 20px;
+}
+
+p {
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+
+
+nav {
+    position: sticky;
+    top: 0;
+    background: #1B1A20;
+    border-bottom: 1px solid var(--border);
+    padding: 13px 0;
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+    z-index: 10;
+}
+
+nav a {
+    font-family: 'Rubik', serif;
+    font-size: 16px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: color 0.15s;
+}
+
+nav a:hover {
+    color: #C19C7A;
+}
+
+nav a.active {
+    color: #C19C7A;
+}
+
+.nav-divider {
+    color: #C19C7A;
+    font-size: 10px;
+    align-self: center;
+}
+
+.rubik-300 {
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+
+.card {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #2A2930;
+    border-radius: 12px;
+    overflow: hidden;
+    max-width: 700px;
+    margin: 48px auto;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.6);
+}
+
+
+/* Description text to the right of the image */
+.card-body {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #2A2930;
+}
+
+.card-body h3 {
+    color: #C19C7A;
+    margin: 0 0 10px 0;
+    font-size: 1.2rem;
+    background-color: transparent;
+}
+
+.card-body p {
+    color: #cccccc;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin: 0;
+    background-color: transparent;
+}
+
+/* Quote strip at the bottom spanning full width */
+.card-quote {
+    width: 100%;
+    padding: 14px 20px;
+    border-top: 1px solid #3a3a42;
+    background-color: #232228;
+}
+
+.card-quote blockquote {
+    margin: 0;
+    font-style: italic;
+    color: #999999;
+    font-size: 0.9rem;
+    background-color: transparent;
+}
+
+.card-quote blockquote::before {
+    content: "\201C";
+    color: #C19C7A;
+    font-size: 1.4rem;
+    margin-right: 4px;
+    vertical-align: -2px;
+}
+
+.card-quote blockquote::after {
+    content: "\201D";
+    color: #C19C7A;
+    font-size: 1.4rem;
+    margin-left: 4px;
+    vertical-align: -2px;
+}
+
+.btn-playnow {
+    display: inline-block;
+    font-family: 'Rubik', sans-serif;
+    color: #FFFFFF;
+    background: #C19C7A;
+    text-decoration: none;
+    padding: 13px 28px;
+    border: 1px solid #C19C7A;
+    transition: background 0.15s, color 0.15s;
+}
+
+.btn-playnow:hover {
+    background: transparent;
+    color: #C19C7A;
+}
+
+
+section {
+    padding: 52px 0;
+    border-bottom: 1px solid var(--border);
+}
